@@ -1,8 +1,13 @@
+import Router from 'next/router'
 import React from 'react'
 
 function ProfilePost() {
+    const handleClick = () => {
+        Router.push('/p/asdsad')
+    }
+
     return (
-        <div className="col-span-2 h-auto relative hover:bg-gray-700 group cursor-pointer">
+        <div onClick={handleClick} className="col-span-2 h-auto relative hover:bg-gray-700 group cursor-pointer">
             <img className="hover:opacity-50 z-0" src="https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg" />
             <div className="text-xs md:text-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex space-x-2  text-white pointer-events-none invisible z-10 group-hover:visible">
                 <button className="flex space-x-1">
