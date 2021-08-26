@@ -20,8 +20,8 @@ function Suggestions() {
                 <a href="#" className="font-medium">Tümünü Gör</a>
             </div>
             {
-                [1, 2, 3, 4, 5].map(a => (
-                    <div className="flex justify-between space-y-2 mt-3 items-center">
+                 Array(5).fill(null).map((_,a)  => (
+                    <div className="flex justify-between space-y-2 mt-3 items-center" key={a}>
                         <a href="#">
                             <img alt="profil resmi" className="w-10 h-10 rounded-full" data-testid="user-avatar" draggable="false" src="https://galeri14.uludagsozluk.com/881/profil-fotografi-tavsiyesi_1423905.jpg" />
                         </a>
