@@ -6,6 +6,9 @@ module.exports = {
     extend: {
       fontSize: {
         '2xs': '.65rem',
+       },
+       colors: {
+         'btnBlue': 'rgb(0, 149, 246)'
        }
     },
   },

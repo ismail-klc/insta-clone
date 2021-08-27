@@ -25,7 +25,7 @@ function SinglePost() {
 
                     <div className="grid grid-cols-6 gap-1 md:gap-6 mb-10 ">
                         {
-                            [1, 2, 3, 4, 5, 6].map((a) => (
+                           Array(6).fill(null).map((_, a) => (
                                 <ProfilePost key={a}/>
                             ))
                         }

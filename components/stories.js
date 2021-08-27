@@ -9,6 +9,7 @@ function Stories() {
             left: ref.current.scrollLeft - 300,
             behavior: 'smooth',
         });
+        console.log(ref);
     }
 
     const toRight = () => {
@@ -38,12 +39,12 @@ function Stories() {
 
             <button
                 onClick={toLeft}
-                className="absolute inline-flex shadow-lg items-center justify-center rounded-full bg-white w-6 h-6 left-3 top-1/2 transform -translate-y-1/2 -rotate-90">
+                className="absolute inline-flex shadow-2xl items-center justify-center rounded-full bg-white w-6 h-6 left-4 top-1/2 transform -translate-y-1/2 -rotate-90">
                 <svg aria-label="Aşağı Ok Simgesi" className="fill-current" role="img" viewBox="0 0 48 48" height="20"><path d="M40 33.5c-.4 0-.8-.1-1.1-.4L24 18.1l-14.9 15c-.6.6-1.5.6-2.1 0s-.6-1.5 0-2.1l16-16c.6-.6 1.5-.6 2.1 0l16 16c.6.6.6 1.5 0 2.1-.3.3-.7.4-1.1.4z"></path></svg>
             </button>
             <button
                 onClick={toRight}
-                className="absolute inline-flex shadow-lg items-center justify-center rounded-full bg-white w-6 h-6 right-3 top-1/2 transform -translate-y-1/2 rotate-90">
+                className="absolute inline-flex shadow-2xl items-center justify-center rounded-full bg-white w-6 h-6 right-4 top-1/2 transform -translate-y-1/2 rotate-90">
                 <svg aria-label="Aşağı Ok Simgesi" className="fill-current" role="img" viewBox="0 0 48 48" height="20"><path d="M40 33.5c-.4 0-.8-.1-1.1-.4L24 18.1l-14.9 15c-.6.6-1.5.6-2.1 0s-.6-1.5 0-2.1l16-16c.6-.6 1.5-.6 2.1 0l16 16c.6.6.6 1.5 0 2.1-.3.3-.7.4-1.1.4z"></path></svg>
             </button>
         </div>
